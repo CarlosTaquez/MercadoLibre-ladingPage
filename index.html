@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clon Inicial MercadoLibre - Landing</title>
+  <meta
+    name="description"
+    content="Clon inicial de MercadoLibre para taller universitario - Práctica de trabajo colaborativo con GitFlow."
+  />
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <!-- =========================================
+       NAVBAR
+  ========================================== -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__logo">
+      <div class="navbar__logo-icon">ML</div>
+      <div class="navbar__logo-text">
+        <span class="navbar__logo-title">MercadoLibre</span>
+        <span class="navbar__logo-subtitle">Clon Taller</span>
+      </div>
+    </div>
+
+    <form class="navbar__search" id="main-search-form">
+      <input
+        type="text"
+        id="main-search-input"
+        class="navbar__search-input"
+        placeholder="Buscar productos, marcas y más..."
+        autocomplete="off"
+      />
+      <button type="submit" class="btn btn--primary">Buscar</button>
+    </form>
+
+    <nav class="navbar__links">
+      <a href="#products" class="navbar__link">Productos</a>
+      <a href="#services" class="navbar__link">Servicios</a>
+      <a href="#dev-portfolio" class="navbar__link">Desarrolladores</a>
+    </nav>
+  </header>
+
+  <!-- =========================================
+       HERO + BUSCADOR SECUNDARIO
+  ========================================== -->
+  <main>
+    <section class="hero" id="search">
+      <div class="hero__content">
+        <h1 class="hero__title">Clon Inicial de MercadoLibre</h1>
+        <p class="hero__subtitle">
+          Taller universitario de trabajo colaborativo con Git y GitFlow.
+        </p>
+
+        <form class="hero__search" id="secondary-search-form">
+          <input
+            type="text"
+            id="secondary-search-input"
+            class="hero__search-input"
+            placeholder="Buscar productos destacados..."
+            autocomplete="off"
+          />
+          <button type="submit" class="btn btn--primary">Buscar</button>
+        </form>
+
+        <p class="hero__hint">
+          Prueba buscar: <span class="hero__hint-keyword">laptop</span>,
+          <span class="hero__hint-keyword">smartphone</span>,
+          <span class="hero__hint-keyword">audífonos</span>.
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================================
+         PRODUCTOS DESTACADOS
+    ========================================== -->
+    <section class="section" id="products">
+      <div class="section__header">
+        <h2 class="section__title">Productos destacados</h2>
+        <p class="section__subtitle">
+          Catálogo de ejemplo para practicar el buscador y el manejo del DOM.
+        </p>
+      </div>
+
+      <div class="products-grid" id="products-grid">
+        <!-- Productos generados por JavaScript -->
+      </div>
+
+      <p class="section__note" id="products-empty-message" hidden>
+        No se encontraron productos para tu búsqueda. Intenta con otro término.
+      </p>
+    </section>
+
+    <!-- =========================================
+         SERVICIOS
+    ========================================== -->
+    <section class="section section--alt" id="services">
+      <div class="section__header">
+        <h2 class="section__title">Servicios del clon</h2>
+        <p class="section__subtitle">
+          Inspirado en la experiencia de MercadoLibre, simplificado para el taller.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <article class="card service-card">
+          <div class="service-card__icon">🛡️</div>
+          <h3 class="service-card__title">Compra segura</h3>
+          <p class="service-card__description">
+            Simulación de flujo seguro para practicar componentes de UI y validaciones básicas.
+          </p>
+        </article>
+
+        <article class="card service-card">
+          <div class="service-card__icon">🚚</div>
+          <h3 class="service-card__title">Envíos rápidos</h3>
+          <p class="service-card__description">
+            Diseño de tarjetas y badges para comunicar tiempos de entrega y beneficios.
+          </p>
+        </article>
+
+        <article class="card service-card">
+          <div class="service-card__icon">✅</div>
+          <h3 class="service-card__title">Garantía</h3>
+          <p class="service-card__description">
+            Sección pensada para practicar layout, íconos y mensajes de confianza.
+          </p>
+        </article>
+
+        <article class="card service-card">
+          <div class="service-card__icon">💬</div>
+          <h3 class="service-card__title">Atención al cliente</h3>
+          <p class="service-card__description">
+            Espacio ideal para experimentar con botones, estados hover y accesibilidad básica.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================================
+         PORTAFOLIO DESARROLLADORES
+    ========================================== -->
+    <section class="section" id="dev-portfolio">
+      <div class="section__header">
+        <h2 class="section__title">Portafolio de desarrolladores</h2>
+        <p class="section__subtitle">
+          Sección pensada para trabajo colaborativo: cada estudiante puede crear o mejorar una tarjeta.
+        </p>
+      </div>
+
+      <div class="dev-grid">
+        <!-- Ejemplo tarjeta 1 (puede ser base para feature/dev-portfolio-1) -->
+        <article class="card dev-card">
+          <div class="dev-card__avatar-wrapper">
+            <img
+              src="assets/avatars/dev-1.png"
+              alt="Avatar de Carlos Taquez"
+              class="dev-card__avatar"
+              onerror="this.src='https://via.placeholder.com/96?text=DEV';"
+            />
+          </div>
+          <div class="dev-card__body">
+            <h3 class="dev-card__name">Carlos Taquez</h3>
+            <p class="dev-card__role">
+              Estudiante de Ingeniería de Software enfocado en desarrollo web.
+            </p>
+
+            <div class="dev-card__section">
+              <h4 class="dev-card__subtitle">Servicios ofrecidos</h4>
+              <ul class="dev-card__list">
+                <li>Desarrollo frontend</li>
+                <li>Diseño de interfaces y UI</li>
+                <li>Landing pages y prototipos web</li>
+              </ul>
+            </div>
+
+            <div class="dev-card__section">
+              <h4 class="dev-card__subtitle">Tecnologías</h4>
+              <div class="tag-list">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Git</span>
+              </div>
+            </div>
+
+            <div class="dev-card__footer">
+              <a
+                href="https://github.com/"
+                class="btn btn--ghost"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver perfil en GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tarjetas vacías para que cada integrante las complete en su feature branch -->
+        <article class="card dev-card dev-card--placeholder">
+          <p class="dev-card__placeholder-text">
+            Tarjeta disponible para <strong>Desarrollador 2</strong>.<br />
+            Rellenar desde la rama <code>feature/dev-portfolio-2</code>.
+          </p>
+        </article>
+
+        <article class="card dev-card dev-card--placeholder">
+          <p class="dev-card__placeholder-text">
+            Tarjeta disponible para <strong>Desarrollador 3</strong>.<br />
+            Rellenar desde la rama <code>feature/dev-portfolio-3</code>.
+          </p>
+        </article>
+
+        <article class="card dev-card dev-card--placeholder">
+          <p class="dev-card__placeholder-text">
+            Tarjeta disponible para <strong>Desarrollador 4</strong>.<br />
+            Rellenar desde la rama <code>feature/dev-portfolio-4</code>.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================
+       FOOTER
+  ========================================== -->
+  <footer class="footer" id="footer">
+    <div class="footer__main">
+      <div class="footer__about">
+        <h3 class="footer__title">Clon Inicial de MercadoLibre</h3>
+        <p class="footer__text">
+          Proyecto académico para practicar desarrollo frontend y flujos de trabajo colaborativos
+          con Git y GitFlow.
+        </p>
+      </div>
+
+      <div class="footer__meta">
+        <p class="footer__text">
+          <strong>Autores:</strong> Equipo de estudiantes (mínimo 4 desarrolladores)
+        </p>
+        <p class="footer__text">
+          <strong>Año:</strong> <span id="current-year"></span>
+        </p>
+      </div>
+
+      <div class="footer__links">
+        <h4 class="footer__subtitle">Enlaces</h4>
+        <ul class="footer__list">
+          <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">Repositorio en GitHub</a></li>
+          <li><a href="https://vercel.com" target="_blank" rel="noopener noreferrer">Deploy en Vercel</a></li>
+          <li><a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__bottom-text">
+        Hecho con HTML, CSS y JavaScript puro para un taller universitario.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
+
