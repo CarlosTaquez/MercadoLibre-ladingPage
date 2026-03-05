@@ -1,27 +1,52 @@
-<header class="navbar" id="navbar">
-  <div class="navbar__logo">
-    <div class="navbar__logo-icon">ML</div>
-    <div class="navbar__logo-text">
-      <span class="navbar__logo-title">MercadoLibre</span>
-      <span class="navbar__logo-subtitle">Clon Taller</span>
+<header class="navbar">
+
+  <div class="navbar__top">
+
+    <!-- LOGO + UBICACION -->
+    <div class="navbar__brand">
+      <img class="navbar__logo-img"
+      src="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.6.92/mercadolibre/logo__large_plus.png">
+
+      <div class="navbar__location">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 2C8.1 2 5 5.1 5 9c0 4.5 7 13 7 13s7-8.5 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z"/>
+        </svg>
+        Ingresa tu ubicación
+      </div>
     </div>
+
+    <!-- BUSCADOR -->
+    <form class="navbar__search">
+      <input class="navbar__search-input"
+      placeholder="Buscar productos, marcas y más...">
+
+      <button class="navbar__search-btn">
+        <svg viewBox="0 0 24 24">
+          <path d="M21 20l-5.6-5.6a7 7 0 10-1.4 1.4L20 21zM5 10a5 5 0 1110 0A5 5 0 015 10z"/>
+        </svg>
+      </button>
+    </form>
+
+    <!-- CUENTA -->
+    <div class="navbar__account">
+      <a href="#">Crea tu cuenta</a>
+      <a href="#">Ingresa</a>
+      <a href="#">Mis compras</a>
+
+      <svg class="navbar__cart" viewBox="0 0 24 24">
+        <path d="M7 18c-1.1 0-2 .9-2 2s.9 2 
+        2 2 2-.9 2-2-.9-2-2-2zm10 
+        0c-1.1 0-2 .9-2 2s.9 2 2 
+        2 2-.9 2-2-.9-2-2-2zM7.2 
+        14h9.5c.8 0 1.5-.5 
+        1.8-1.2l3.2-7.3H6.2L5.3 
+        2H1v2h3l3.6 7.6-1.3 
+        2.4c-.2.3-.3.7-.3 
+        1 0 1.1.9 2 2 
+        2h12v-2H8.4l.8-1.5z"/>
+      </svg>
+    </div>
+
   </div>
 
-  <form class="navbar__search" id="main-search-form">
-    <input
-      type="text"
-      id="main-search-input"
-      class="navbar__search-input"
-      placeholder="Buscar productos, marcas y más..."
-      autocomplete="off"
-    />
-    <button type="submit" class="btn btn--primary">Buscar</button>
-  </form>
-
-  <nav class="navbar__links">
-    <a href="#products" class="navbar__link">Productos</a>
-    <a href="#services" class="navbar__link">Servicios</a>
-    <a href="#dev-portfolio" class="navbar__link">Desarrolladores</a>
-  </nav>
 </header>
-
