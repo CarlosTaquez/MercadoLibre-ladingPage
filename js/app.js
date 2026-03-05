@@ -7,7 +7,7 @@ const PRODUCTS = [
     price: 3999000,
     installmentText: "12x 333.250 sin interés",
     image:
-      "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_858255-MLA92985235479_092025-F.webp",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const PRODUCTS = [
     price: 1499900,
     installmentText: "6x 249.983 sin interés",
     image:
-      "https://images.pexels.com/photos/6078120/pexels-photo-6078120.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_993015-MLA85344277658_062025-F.webp",
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ const PRODUCTS = [
     price: 299900,
     installmentText: "6x 49.983 sin interés",
     image:
-      "https://images.pexels.com/photos/3394664/pexels-photo-3394664.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_933232-MLA95691272096_102025-F.webp",
   },
   {
     id: 4,
@@ -31,7 +31,7 @@ const PRODUCTS = [
     price: 559900,
     installmentText: "6x 93.317 sin interés",
     image:
-      "https://images.pexels.com/photos/4370370/pexels-photo-4370370.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_850253-MLA99448228592_112025-F.webp",
   },
   {
     id: 5,
@@ -39,7 +39,7 @@ const PRODUCTS = [
     price: 899900,
     installmentText: "12x 74.992 sin interés",
     image:
-      "https://images.pexels.com/photos/5081388/pexels-photo-5081388.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_906073-MLA97279751650_112025-F.webp",
   },
 ];
 
