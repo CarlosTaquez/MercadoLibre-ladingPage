@@ -38,6 +38,9 @@
       <a href="#products" class="navbar__link">Productos</a>
       <a href="#services" class="navbar__link">Servicios</a>
       <a href="#dev-portfolio" class="navbar__link">Desarrolladores</a>
+      <button class="navbar__cart" id="cart-button" type="button">
+        🛒 <span class="navbar__cart-badge" id="cart-count">0</span>
+      </button>
     </nav>
   </header>
 
@@ -72,6 +75,23 @@
     </section>
 
     <!-- =========================================
+         CATEGORÍAS
+    ========================================== -->
+    <section class="section">
+      <div class="section__header">
+        <h2 class="section__title">Categorías</h2>
+      </div>
+      <div class="categories-grid">
+        <button class="category-btn" data-category="all">Todos</button>
+        <button class="category-btn" data-category="laptop">💻 Laptops</button>
+        <button class="category-btn" data-category="smartphone">📱 Smartphones</button>
+        <button class="category-btn" data-category="audio">🎧 Audio</button>
+        <button class="category-btn" data-category="wearable">⌚ Wearables</button>
+        <button class="category-btn" data-category="tablet">📱 Tablets</button>
+      </div>
+    </section>
+
+    <!-- =========================================
          PRODUCTOS DESTACADOS
     ========================================== -->
     <section class="section" id="products">
@@ -80,6 +100,18 @@
         <p class="section__subtitle">
           Catálogo de ejemplo para practicar el buscador y el manejo del DOM.
         </p>
+        <div class="filters-bar">
+          <select id="sort-select" class="filter-select">
+            <option value="">Ordenar por</option>
+            <option value="price-asc">Menor precio</option>
+            <option value="price-desc">Mayor precio</option>
+            <option value="name">Nombre A-Z</option>
+          </select>
+          <label class="filter-checkbox">
+            <input type="checkbox" id="free-shipping-filter" />
+            Envío gratis
+          </label>
+        </div>
       </div>
 
       <div class="products-grid" id="products-grid">
@@ -89,7 +121,7 @@
       <p class="section__note" id="products-empty-message" hidden>
         No se encontraron productos para tu búsqueda. Intenta con otro término.
       </p>
-    </section>
+    </section>""
 
     <!-- =========================================
          SERVICIOS
@@ -331,6 +363,29 @@
       </p>
     </div>
   </footer>
+
+  <!-- =========================================
+       MODAL CARRITO
+  ========================================== -->
+  <div class="modal" id="cart-modal" hidden>
+    <div class="modal__overlay" id="cart-modal-overlay"></div>
+    <div class="modal__content">
+      <div class="modal__header">
+        <h2 class="modal__title">Carrito de compras</h2>
+        <button class="modal__close" id="cart-modal-close" type="button">✕</button>
+      </div>
+      <div class="modal__body" id="cart-items">
+        <p class="cart-empty">Tu carrito está vacío</p>
+      </div>
+      <div class="modal__footer" id="cart-footer" hidden>
+        <div class="cart-total">
+          <span>Total:</span>
+          <strong id="cart-total-price">$0</strong>
+        </div>
+        <button class="btn btn--primary" type="button">Finalizar compra</button>
+      </div>
+    </div>
+  </div>
 
   <script src="js/app.js"></script>
 </body>
