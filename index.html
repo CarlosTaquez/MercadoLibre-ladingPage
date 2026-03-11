@@ -141,124 +141,157 @@
          PORTAFOLIO DESARROLLADORES
     ========================================== -->
     <section class="section" id="dev-portfolio">
-      <div class="section__header">
-        <h2 class="section__title">Portafolio de desarrolladores</h2>
-        <p class="section__subtitle">
-          Sección pensada para trabajo colaborativo: cada estudiante puede crear o mejorar una tarjeta.
+  <div class="section__header">
+    <h2 class="section__title">Portafolio de desarrolladores</h2>
+    <p class="section__subtitle">
+      Conoce al equipo de estudiantes de Ingeniería de Software que desarrolló esta landing page.
+    </p>
+  </div>
+
+  <div class="dev-grid">
+
+    <!-- DEV 1 -->
+    <article class="card dev-card">
+      <div class="dev-card__avatar-wrapper">
+        <img
+          src="assets/avatars/dev-1.png"
+          alt="Avatar de Miguel Felipe Alfaro"
+          class="dev-card__avatar"
+          onerror="this.src='https://via.placeholder.com/96?text=DEV';"
+        />
+      </div>
+
+      <div class="dev-card__body">
+        <h3 class="dev-card__name">Miguel Felipe Alfaro Caicedo</h3>
+
+        <p class="dev-card__role">
+          Estudiante de Ingeniería de Software con interés en desarrollo web,
+          interfaces modernas y trabajo colaborativo con Git.
         </p>
+
+        <div class="dev-card__section">
+          <h4 class="dev-card__subtitle">Servicios</h4>
+          <ul class="dev-card__list">
+            <li>Desarrollo de interfaces web</li>
+            <li>Diseño de landing pages</li>
+            <li>Integración frontend</li>
+          </ul>
+        </div>
+
+        <div class="dev-card__section">
+          <h4 class="dev-card__subtitle">Tecnologías</h4>
+          <div class="tag-list">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Git</span>
+          </div>
+        </div>
+
+        <div class="dev-card__footer">
+          <a href="https://github.com/miguelalfaro7" class="btn btn--ghost" target="_blank">
+            Ver perfil en GitHub
+          </a>
+        </div>
+      </div>
+    </article>
+
+
+    <!-- DEV 2 -->
+    <article class="card dev-card">
+      <div class="dev-card__avatar-wrapper">
+        <img
+          src="assets/avatars/dev-2.png"
+          alt="Avatar de Carlos Taquez"
+          class="dev-card__avatar"
+          onerror="this.src='https://via.placeholder.com/96?text=DEV';"
+        />
       </div>
 
-      <div class="dev-grid">
-        <!-- Ejemplo tarjeta 1 (puede ser base para feature/dev-portfolio-1) -->
-        <article class="card dev-card">
-          <div class="dev-card__avatar-wrapper">
-            <img
-              src="assets/avatars/dev-1.png"
-              alt="Avatar de Carlos Taquez"
-              class="dev-card__avatar"
-              onerror="this.src='https://via.placeholder.com/96?text=DEV';"
-            />
+      <div class="dev-card__body">
+        <h3 class="dev-card__name">Carlos Taquez</h3>
+
+        <p class="dev-card__role">
+          Estudiante de Ingeniería de Software enfocado en desarrollo web
+          y construcción de soluciones digitales modernas.
+        </p>
+
+        <div class="dev-card__section">
+          <h4 class="dev-card__subtitle">Servicios</h4>
+          <ul class="dev-card__list">
+            <li>Desarrollo frontend</li>
+            <li>Diseño UI</li>
+            <li>Maquetación web</li>
+          </ul>
+        </div>
+
+        <div class="dev-card__section">
+          <h4 class="dev-card__subtitle">Tecnologías</h4>
+          <div class="tag-list">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Git</span>
           </div>
-          <div class="dev-card__body">
-            <h3 class="dev-card__name">Carlos Taquez</h3>
-            <p class="dev-card__role">
-              Estudiante de Ingeniería de Software enfocado en desarrollo web.
-            </p>
+        </div>
 
-            <div class="dev-card__section">
-              <h4 class="dev-card__subtitle">Servicios ofrecidos</h4>
-              <ul class="dev-card__list">
-                <li>Desarrollo frontend</li>
-                <li>Diseño de interfaces y UI</li>
-                <li>Landing pages y prototipos web</li>
-              </ul>
-            </div>
-
-            <div class="dev-card__section">
-              <h4 class="dev-card__subtitle">Tecnologías</h4>
-              <div class="tag-list">
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">JavaScript</span>
-                <span class="tag">Git</span>
-              </div>
-            </div>
-
-            <div class="dev-card__footer">
-              <a
-                href="https://github.com/jManuel0"
-                class="btn btn--ghost"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Ver perfil en GitHub
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Tarjetas vacías para que cada integrante las complete en su feature branch -->
-        <article class="card dev-card dev-card--placeholder">
-          <p class="dev-card__placeholder-text">
-            Tarjeta disponible para <strong>Desarrollador 2</strong>.<br />
-            Rellenar desde la rama <code>feature/dev-portfolio-2</code>.
-          </p>
-        </article>
-
-        <article class="card dev-card">
-          <div class="dev-card__avatar-wrapper">
-            <img
-              src="https://via.placeholder.com/96?text=JM"
-              alt="Avatar de Juan Manuel Ordoñez"
-              class="dev-card__avatar"
-              onerror="this.src='https://via.placeholder.com/96?text=DEV';"
-            />
-          </div>
-          <div class="dev-card__body">
-            <h3 class="dev-card__name">Juan Manuel Ordoñez</h3>
-            <p class="dev-card__role">
-              Estudiante de Ingeniería de Software con enfoque en desarrollo frontend.
-            </p>
-
-            <div class="dev-card__section">
-              <h4 class="dev-card__subtitle">Servicios ofrecidos</h4>
-              <ul class="dev-card__list">
-                <li>Desarrollo de interfaces frontend</li>
-                <li>Maquetación de landing pages</li>
-                <li>Implementación de componentes interactivos</li>
-              </ul>
-            </div>
-
-            <div class="dev-card__section">
-              <h4 class="dev-card__subtitle">Tecnologías</h4>
-              <div class="tag-list">
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">JavaScript</span>
-              </div>
-            </div>
-
-            <div class="dev-card__footer">
-              <a
-                href="https://github.com/"
-                class="btn btn--ghost"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Ver perfil en GitHub
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="card dev-card dev-card--placeholder">
-          <p class="dev-card__placeholder-text">
-            Tarjeta disponible para <strong>Desarrollador 4</strong>.<br />
-            Rellenar desde la rama <code>feature/dev-portfolio-4</code>.
-          </p>
-        </article>
+        <div class="dev-card__footer">
+          <a href="https://github.com/CarlosTaquez" class="btn btn--ghost" target="_blank">
+            Ver perfil en GitHub
+          </a>
+        </div>
       </div>
-    </section>
+    </article>
+
+
+    <!-- DEV 3 -->
+    <article class="card dev-card">
+      <div class="dev-card__avatar-wrapper">
+        <img
+          src="assets/avatars/dev-3.png"
+          alt="Avatar de Juan Manuel Ordoñez"
+          class="dev-card__avatar"
+          onerror="this.src='https://via.placeholder.com/96?text=DEV';"
+        />
+      </div>
+
+      <div class="dev-card__body">
+        <h3 class="dev-card__name">Juan Manuel Ordoñez</h3>
+
+        <p class="dev-card__role">
+          Estudiante de Ingeniería de Software interesado en el desarrollo
+          de aplicaciones web y proyectos tecnológicos colaborativos.
+        </p>
+
+        <div class="dev-card__section">
+          <h4 class="dev-card__subtitle">Servicios</h4>
+          <ul class="dev-card__list">
+            <li>Desarrollo web</li>
+            <li>Optimización de interfaces</li>
+            <li>Implementación frontend</li>
+          </ul>
+        </div>
+
+        <div class="dev-card__section">
+          <h4 class="dev-card__subtitle">Tecnologías</h4>
+          <div class="tag-list">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Git</span>
+          </div>
+        </div>
+
+        <div class="dev-card__footer">
+          <a href="https://github.com/jManuel0" class="btn btn--ghost" target="_blank">
+            Ver perfil en GitHub
+          </a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
   </main>
 
   <!-- =========================================
@@ -286,9 +319,8 @@
       <div class="footer__links">
         <h4 class="footer__subtitle">Enlaces</h4>
         <ul class="footer__list">
-          <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">Repositorio en GitHub</a></li>
-          <li><a href="https://vercel.com" target="_blank" rel="noopener noreferrer">Deploy en Vercel</a></li>
-          <li><a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a></li>
+          <li><a href="https://github.com/CarlosTaquez/MercadoLibre-ladingPage.git" target="_blank" rel="noopener noreferrer">Repositorio en GitHub</a></li>
+          <li><a href="https://mercado-libre-lading-page.vercel.app/" target="_blank" rel="noopener noreferrer">Deploy en Vercel</a></li>
         </ul>
       </div>
     </div>
@@ -303,4 +335,5 @@
   <script src="js/app.js"></script>
 </body>
 </html>
+
 
