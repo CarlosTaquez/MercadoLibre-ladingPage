@@ -99,8 +99,7 @@ main {
   right: 0;
   z-index: 20;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
   gap: 16px;
   padding: 8px 24px;
   background-color: var(--ml-yellow);
@@ -572,182 +571,6 @@ main {
    Esto se agrega sin modificar lo anterior
 ========================================= */
 
-.navbar-ml {
-  background-color: var(--ml-yellow);
-  padding: 10px 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.navbar-ml-top {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.navbar-ml-logo img {
-  width: 130px;
-}
-
-.navbar-ml-location {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 12px;
-  color: var(--ml-text);
-}
-
-.navbar-ml-location small {
-  display: block;
-  color: var(--ml-text-soft);
-}
-
-.navbar-ml-search {
-  flex: 1;
-  display: flex;
-  max-width: 600px;
-}
-
-.navbar-ml-search input {
-  flex: 1;
-  padding: 10px;
-  border: none;
-  border-radius: 4px 0 0 4px;
-}
-
-.navbar-ml-search button {
-  border: none;
-  background: white;
-  padding: 10px 14px;
-  cursor: pointer;
-}
-
-.navbar-ml-bottom {
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
-}
-
-.navbar-ml-links {
-  display: flex;
-  gap: 16px;
-}
-
-.navbar-ml-links a {
-  color: var(--ml-text);
-  font-size: 14px;
-}
-
-.navbar-ml-user {
-  display: flex;
-  gap: 16px;
-}
-
-.navbar-ml-user a {
-  color: var(--ml-text);
-}
-
-
-/* =========================================
-   NAVBAR MERCADOLIBRE CLON
-========================================= */
-
-.navbar-ml{
-  background: var(--ml-yellow);
-  display:flex;
-  flex-direction:column;
-  padding:10px 24px;
-  gap:8px;
-}
-
-.navbar-ml-top{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-}
-
-.navbar-ml-left{
-  display:flex;
-  flex-direction:column;
-  gap:4px;
-}
-
-.navbar-ml-logo img{
-  width:140px;
-}
-
-.navbar-ml-location{
-  display:flex;
-  align-items:center;
-  gap:6px;
-  font-size:12px;
-  color:var(--ml-text);
-}
-
-.navbar-ml-location img{
-  width:16px;
-}
-
-.navbar-ml-search{
-  flex:1;
-  max-width:650px;
-  margin:0 40px;
-  display:flex;
-}
-
-.navbar-ml-search input{
-  flex:1;
-  padding:10px;
-  border:none;
-  border-radius:4px 0 0 4px;
-  font-size:14px;
-}
-
-.navbar-ml-search button{
-  border:none;
-  background:white;
-  padding:10px 16px;
-  cursor:pointer;
-}
-
-.navbar-ml-user{
-  display:flex;
-  gap:18px;
-  font-size:14px;
-}
-
-.navbar-ml-user a{
-  color:var(--ml-text);
-}
-
-.navbar-ml-cart{
-  font-size:18px;
-}
-
-.navbar-ml-bottom{
-  display:flex;
-  justify-content:flex-start;
-}
-
-.navbar-ml-links{
-  display:flex;
-  gap:18px;
-  font-size:14px;
-}
-
-.navbar-ml-links a{
-  color:var(--ml-text);
-}
-
-
-
-
-
-/* =========================================
-   AJUSTES FINALES NAVBAR MERCADOLIBRE
-========================================= */
-
 .navbar {
   padding: 8px 40px;
 }
@@ -788,12 +611,13 @@ main {
   fill:#333;
 }
 
-/* BUSCADOR CENTRADO Y LARGO */
+/* BUSCADOR */
 .navbar__search{
   width:100%;
   max-width:650px;
-  margin:auto;
+  margin:0 auto;
   display:flex;
+  align-items:center;
   background:#fff;
   border-radius:2px;
   overflow:hidden;
@@ -805,6 +629,7 @@ main {
   border:none;
   padding:12px 14px;
   font-size:15px;
+  outline:none;
 }
 
 .navbar__search-btn{
@@ -842,12 +667,47 @@ main {
   fill:#333;
 }
 
-/* MENU INFERIOR (NO CAMBIAR ESTILO) */
+/* MENU INFERIOR */
 .navbar__bottom{
   margin-top:6px;
   display:flex;
   align-items:center;
-  justify-content:space-between;
+  justify-content:center;
   font-size:14px;
 }
 
+/* LINKS MENU */
+.nav-area{
+display:flex;
+align-items:center;
+justify-content:center;
+width:100%;
+margin-top:6px;
+}
+
+.nav-menu{
+  display:flex;
+}
+
+.nav-menu-list{
+  display:flex;
+  gap:18px;
+  list-style:none;
+  padding:0;
+  margin:0;
+  font-size:14px;
+}
+
+.nav-menu-item a{
+  text-decoration:none;
+  color:#333;
+}
+
+.nav-menu-item a:hover{
+  text-decoration:underline;
+}
+
+/* ESPACIO PARA NAVBAR FIXED */
+main{
+  padding-top:120px;
+}
